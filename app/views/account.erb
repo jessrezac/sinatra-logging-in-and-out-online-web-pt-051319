@@ -9,11 +9,11 @@
     <% if Helpers.is_logged_in?(@session) %>
       <p> Welcome <%= Helpers.current_user(@session).name %> </p>
       <p> <%= Helpers.current_user(@session).balance %> </p>
-    <% else %>
-      <p>You Must <a href="/">Log In</a> to View Your Balance
+      
+      <a href="/logout">Log Out</a>
+
     <% end %>
 
-    <a href="/logout">Log Out</a>
 
   </body>
 </html>
