@@ -9,6 +9,9 @@
     <% if Helper.is_logged_in? %>
       <p> Welcome <%= @user.username %> </p>
       <p> <%= @user.balance %> </p>
+    <% else %>
+    <h1>You Must <a href="/">Log In</a> to View Your Balance</h1>
+
     <% end %>
 
 
