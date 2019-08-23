@@ -29,7 +29,6 @@ class ApplicationController < Sinatra::Base
 
   get '/logout' do
     binding.pry
-    session = {}
     redirect to "/"
   end
 
