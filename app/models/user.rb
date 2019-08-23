@@ -1,3 +1,3 @@
-class User < ActiveRecord::Base[5.1]
+class User < ActiveRecord::Base
 
 end
