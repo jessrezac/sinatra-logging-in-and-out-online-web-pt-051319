@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">
   </head>
   <body id="page-top">
-      <p> Welcome <%= Helper.current_user.name if Helper.is_logged_in?(@session) %> </p>
+    <% if Helper.is_logged_in?(@session) %>
+      <p> Welcome <%= Helper.current_user.name %> </p>
       <p> <%= @user.balance %> </p>
     <% else %>
       <p>You Must <a href="/">Log In</a> to View Your Balance
