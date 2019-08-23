@@ -28,7 +28,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/logout' do
-    session = {}
+    session[:user_id] = nil
     redirect to "/"
   end
 
